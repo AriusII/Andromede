@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orchestrator", "Orchestrator", "{0D68AA94-2404-4658-98CA-523FB1CAFD33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Srcs", "Srcs", "{FAAB6CB5-1D45-4558-97C0-D7FCF647F9B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{B77DD124-C8CD-4AB5-8009-48B5F9E95AB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D120463C-A163-4F6F-8F29-AF313DEF9CD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internals", "Internals", "{6668859C-0612-474E-8F37-8AE7CB0DA7B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Externals", "Externals", "{FB48E0DF-04EF-46FC-868E-2CAC19D3D3DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BE882C0D-18E9-40A1-A24C-160B020CC3AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Orchestrator.Aspire", "Orchestrator\Andromede.Orchestrator.Aspire\Andromede.Orchestrator.Aspire.csproj", "{579435F6-6178-4859-B6A3-D88ABEB8F71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Libs.Framework", "Libs\Andromede.Libs.Framework\Andromede.Libs.Framework.csproj", "{FEFB92B5-0AE6-40AD-B534-D88C939DD422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.External.Authentication", "Srcs\Andromede.Srcs.External.Authentication\Andromede.Srcs.External.Authentication.csproj", "{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Internals.Users", "Srcs\Andromede.Srcs.Internals.Users\Andromede.Srcs.Internals.Users.csproj", "{62937DE4-80A1-4FF2-B3C8-8F635720A7B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Services.Mailling", "Srcs\Andromede.Srcs.Services.Mailling\Andromede.Srcs.Services.Mailling.csproj", "{2B49A25B-920C-4E9B-A73F-ECD34AD741BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Services.Logging", "Srcs\Andromede.Srcs.Services.Logging\Andromede.Srcs.Services.Logging.csproj", "{C7775E13-5F69-4297-83A8-6857ED8B98BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6668859C-0612-474E-8F37-8AE7CB0DA7B5} = {FAAB6CB5-1D45-4558-97C0-D7FCF647F9B8}
+		{FB48E0DF-04EF-46FC-868E-2CAC19D3D3DD} = {FAAB6CB5-1D45-4558-97C0-D7FCF647F9B8}
+		{BE882C0D-18E9-40A1-A24C-160B020CC3AB} = {FAAB6CB5-1D45-4558-97C0-D7FCF647F9B8}
+		{579435F6-6178-4859-B6A3-D88ABEB8F71C} = {0D68AA94-2404-4658-98CA-523FB1CAFD33}
+		{FEFB92B5-0AE6-40AD-B534-D88C939DD422} = {B77DD124-C8CD-4AB5-8009-48B5F9E95AB2}
+		{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC} = {FB48E0DF-04EF-46FC-868E-2CAC19D3D3DD}
+		{62937DE4-80A1-4FF2-B3C8-8F635720A7B9} = {6668859C-0612-474E-8F37-8AE7CB0DA7B5}
+		{2B49A25B-920C-4E9B-A73F-ECD34AD741BA} = {BE882C0D-18E9-40A1-A24C-160B020CC3AB}
+		{C7775E13-5F69-4297-83A8-6857ED8B98BC} = {BE882C0D-18E9-40A1-A24C-160B020CC3AB}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{579435F6-6178-4859-B6A3-D88ABEB8F71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{579435F6-6178-4859-B6A3-D88ABEB8F71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{579435F6-6178-4859-B6A3-D88ABEB8F71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{579435F6-6178-4859-B6A3-D88ABEB8F71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEFB92B5-0AE6-40AD-B534-D88C939DD422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEFB92B5-0AE6-40AD-B534-D88C939DD422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEFB92B5-0AE6-40AD-B534-D88C939DD422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEFB92B5-0AE6-40AD-B534-D88C939DD422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62937DE4-80A1-4FF2-B3C8-8F635720A7B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62937DE4-80A1-4FF2-B3C8-8F635720A7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62937DE4-80A1-4FF2-B3C8-8F635720A7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62937DE4-80A1-4FF2-B3C8-8F635720A7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B49A25B-920C-4E9B-A73F-ECD34AD741BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B49A25B-920C-4E9B-A73F-ECD34AD741BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B49A25B-920C-4E9B-A73F-ECD34AD741BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B49A25B-920C-4E9B-A73F-ECD34AD741BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7775E13-5F69-4297-83A8-6857ED8B98BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7775E13-5F69-4297-83A8-6857ED8B98BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7775E13-5F69-4297-83A8-6857ED8B98BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7775E13-5F69-4297-83A8-6857ED8B98BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
