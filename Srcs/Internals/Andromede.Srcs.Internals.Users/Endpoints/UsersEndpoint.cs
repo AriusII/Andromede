@@ -6,9 +6,21 @@ namespace Andromede.Srcs.Internals.Users.Endpoints;
 
 internal sealed class UsersEndpoint : UsersServiceBase
 {
-    public override Task<GetUserByIdResponse> GetUserById(GetUserByIdRequest request, ServerCallContext context)
+    public override async Task<GetUserByIdResponse> GetUserById(GetUserByIdRequest request, ServerCallContext context)
     {
-        return base.GetUserById(request, context);
+        var askedUser = request.UserId;
+
+        var result = new GetUserByIdResponse
+        {
+            User = new User
+            {
+                Id = askedUser,
+                Name = "John Doe",
+                Email = "[email protected]"
+            }
+        };
+
+        return await Task.FromResult(result);
     }
 
     public override Task<CreateUserResponse> CreateUser(CreateUserRequest request, ServerCallContext context)
@@ -21,7 +33,8 @@ internal sealed class UsersEndpoint : UsersServiceBase
         return base.UpdateUser(request, context);
     }
 
-    public override Task<DeleteUserByIdResponse> DeleteUserById(DeleteUserByIdRequest request, ServerCallContext context)
+    public override Task<DeleteUserByIdResponse> DeleteUserById(DeleteUserByIdRequest request,
+        ServerCallContext context)
     {
         return base.DeleteUserById(request, context);
     }

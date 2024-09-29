@@ -7,11 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Aspire.Microsoft.Data.SqlClient" Version="8.2.1"/>
+        <PackageReference Include="Aspire.StackExchange.Redis" Version="8.2.1"/>
+        <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.2.1"/>
         <PackageReference Include="Grpc.AspNetCore" Version="2.66.0"/>
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0"/>
     </ItemGroup>
 
     <ItemGroup>
-        <Protobuf Include="Protos/**/*.proto" OutputDir="GeneratedDebugProto/Services" GrpcServices="Both" />
+        <Protobuf Include="Protos/**/*.proto" OutputDir="GeneratedDebugProto/Services" GrpcServices="Both"/>
     </ItemGroup>
 </Project>

@@ -18,13 +18,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Orchestrator.Aspi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Libs.Framework", "Libs\Andromede.Libs.Framework\Andromede.Libs.Framework.csproj", "{FEFB92B5-0AE6-40AD-B534-D88C939DD422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.External.Authentication", "Srcs\Andromede.Srcs.External.Authentication\Andromede.Srcs.External.Authentication.csproj", "{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Externals.Authentication", "Srcs\Externals\Andromede.Srcs.Externals.Authentication\Andromede.Srcs.Externals.Authentication.csproj", "{BAD2EEF2-5E14-48C7-9F74-73C5ACB5C7FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Internals.Users", "Srcs\Andromede.Srcs.Internals.Users\Andromede.Srcs.Internals.Users.csproj", "{62937DE4-80A1-4FF2-B3C8-8F635720A7B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Internals.Users", "Srcs\Internals\Andromede.Srcs.Internals.Users\Andromede.Srcs.Internals.Users.csproj", "{62937DE4-80A1-4FF2-B3C8-8F635720A7B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Services.Mailling", "Srcs\Andromede.Srcs.Services.Mailling\Andromede.Srcs.Services.Mailling.csproj", "{2B49A25B-920C-4E9B-A73F-ECD34AD741BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Services.Mailling", "Srcs\Services\Andromede.Srcs.Services.Mailling\Andromede.Srcs.Services.Mailling.csproj", "{2B49A25B-920C-4E9B-A73F-ECD34AD741BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Services.Logging", "Srcs\Andromede.Srcs.Services.Logging\Andromede.Srcs.Services.Logging.csproj", "{C7775E13-5F69-4297-83A8-6857ED8B98BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Srcs.Services.Logging", "Srcs\Services\Andromede.Srcs.Services.Logging\Andromede.Srcs.Services.Logging.csproj", "{C7775E13-5F69-4297-83A8-6857ED8B98BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Andromede.Orchestrator.ServiceDefaults", "Orchestrator\Andromede.Orchestrator.ServiceDefaults\Andromede.Orchestrator.ServiceDefaults.csproj", "{27A08684-A434-4AE5-9814-5DA7BAB3322F}"
 EndProject

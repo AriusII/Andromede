@@ -9,12 +9,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Grpc.AspNetCore" Version="2.57.0"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\..\Libs\Andromede.Libs.Framework\Andromede.Libs.Framework.csproj" />
-      <ProjectReference Include="..\..\Orchestrator\Andromede.Orchestrator.ServiceDefaults\Andromede.Orchestrator.ServiceDefaults.csproj" />
+        <ProjectReference Include="..\..\..\Libs\Andromede.Libs.Framework\Andromede.Libs.Framework.csproj"/>
+        <ProjectReference Include="..\..\Libs\Andromede.Libs.Framework\Andromede.Libs.Framework.csproj"/>
+        <ProjectReference Include="..\..\Orchestrator\Andromede.Orchestrator.ServiceDefaults\Andromede.Orchestrator.ServiceDefaults.csproj"/>
     </ItemGroup>
 
 </Project>
