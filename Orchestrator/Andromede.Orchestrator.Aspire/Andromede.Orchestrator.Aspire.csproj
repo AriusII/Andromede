@@ -11,6 +11,15 @@
 
     <ItemGroup>
         <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.1"/>
+        <PackageReference Include="Aspire.Hosting.Redis" Version="8.2.1" />
+        <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.2.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Srcs\Andromede.Srcs.External.Authentication\Andromede.Srcs.External.Authentication.csproj" />
+      <ProjectReference Include="..\..\Srcs\Andromede.Srcs.Internals.Users\Andromede.Srcs.Internals.Users.csproj" />
+      <ProjectReference Include="..\..\Srcs\Andromede.Srcs.Services.Logging\Andromede.Srcs.Services.Logging.csproj" />
+      <ProjectReference Include="..\..\Srcs\Andromede.Srcs.Services.Mailling\Andromede.Srcs.Services.Mailling.csproj" />
     </ItemGroup>
 
 </Project>

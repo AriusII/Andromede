@@ -10,6 +10,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\Libs\Andromede.Libs.Framework\Andromede.Libs.Framework.csproj"/>
+        <ProjectReference Include="..\..\Orchestrator\Andromede.Orchestrator.ServiceDefaults\Andromede.Orchestrator.ServiceDefaults.csproj" />
     </ItemGroup>
 
 </Project>

@@ -2,6 +2,7 @@ using Andromede.Srcs.Internals.Users.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddServiceDefaults();
 // Add services to the container.
 builder.Services.AddGrpc();
 
