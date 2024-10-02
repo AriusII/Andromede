@@ -1,10 +1,24 @@
+using Andromede.Libs.Framework.Scripts;
+using Andromede.Orchestrator.Services;
 using Andromede.Srcs.Internals.Users.Endpoints;
+using Andromede.Srcs.Internals.Users.Extensions;
+using CaeriusNet.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 builder.AddRedisOutputCache("cache");
 builder.AddSqlServerClient("sqlserver");
+
+string? andromedeCnxString = null;
+if (builder.Configuration.GetConnectionString("sqlserver") is string connectionString)
+    andromedeCnxString = connectionString;
+
+DatabaseMigrator.Migrate(andromedeCnxString!);
+
+builder.Services
+    .RegisterCaeriusOrm(andromedeCnxString!)
+    .AddUsersDependencies();
 
 // Add services to the container.
 builder.Services.AddGrpc(options => { options.EnableDetailedErrors = true; });

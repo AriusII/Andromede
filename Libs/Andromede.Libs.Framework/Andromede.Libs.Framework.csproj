@@ -9,12 +9,26 @@
     <ItemGroup>
         <PackageReference Include="Aspire.Microsoft.Data.SqlClient" Version="8.2.1"/>
         <PackageReference Include="Aspire.StackExchange.Redis" Version="8.2.1"/>
+        <PackageReference Include="Aspire.StackExchange.Redis.DistributedCaching" Version="8.2.1"/>
         <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.2.1"/>
+        <PackageReference Include="CaeriusNet" Version="1.5.1"/>
+        <PackageReference Include="dbup" Version="5.0.41"/>
         <PackageReference Include="Grpc.AspNetCore" Version="2.66.0"/>
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0"/>
     </ItemGroup>
 
     <ItemGroup>
-        <Protobuf Include="Protos/**/*.proto" OutputDir="GeneratedDebugProto/Services" GrpcServices="Both"/>
+        <Protobuf Include="Protos/**/*.proto" OutputDir="DebugProto" GrpcServices="Both"/>
+        <Protobuf Update="Protos\Services\UsersService.proto">
+            <Access>Public</Access>
+            <ProtoCompile>True</ProtoCompile>
+            <CompileOutputs>True</CompileOutputs>
+            <Generator>MSBuild:Compile</Generator>
+        </Protobuf>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="Scripts\Users\*.sql"/>
+        <EmbeddedResource Include="Scripts\Users\*.sql"/>
     </ItemGroup>
 </Project>

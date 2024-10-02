@@ -1,10 +1,11 @@
-﻿using Grpc.Core;
+﻿using Andromede.Srcs.Internals.Users.Interfaces;
+using Grpc.Core;
 using UsersService;
 using UsersServiceBase = UsersService.UsersService.UsersServiceBase;
 
 namespace Andromede.Srcs.Internals.Users.Endpoints;
 
-internal sealed class UsersEndpoint : UsersServiceBase
+internal sealed class UsersEndpoint(IUsersService usersService) : UsersServiceBase
 {
     public override async Task<GetUserByIdResponse> GetUserById(GetUserByIdRequest request, ServerCallContext context)
     {
@@ -20,7 +21,18 @@ internal sealed class UsersEndpoint : UsersServiceBase
             }
         };
 
-        return await Task.FromResult(result);
+        var res = await usersService.GetUsersByIdAsync(askedUser);
+
+        var response = new GetUserByIdResponse
+        {
+            User = new User
+            {
+                Id = res.UsersId,
+                Name = res.Username
+            }
+        };
+
+        return await Task.FromResult(response);
     }
 
     public override Task<CreateUserResponse> CreateUser(CreateUserRequest request, ServerCallContext context)

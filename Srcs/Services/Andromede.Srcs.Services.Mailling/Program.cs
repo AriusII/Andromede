@@ -1,7 +1,10 @@
+using Andromede.Orchestrator.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddGrpc();
+builder.AddServiceDefaults();
 
 var app = builder.Build();
 

@@ -1,0 +1,28 @@
+﻿syntax = "proto3";
+package Services.Authentication;
+
+option csharp_namespace = "AuthenticationService";
+
+service AuthenticationService {
+  rpc Authenticate (AuthenticateRequest) returns (AuthenticateResponse);
+  rpc Register (RegisterRequest) returns (RegisterResponse);
+}
+
+message AuthenticateRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message AuthenticateResponse {
+  string token = 1;
+}
+
+message RegisterRequest {
+  string name = 1;
+  string email = 2;
+  string password = 3;
+}
+
+message RegisterResponse {
+  string token = 1;
+}
