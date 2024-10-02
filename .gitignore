@@ -8,7 +8,7 @@ Andromede.sln.DotSettings.user
 .idea/*
 Libs/Andromede.Libs.Framework/obj/*
 Libs/Andromede.Libs.Framework/bin/*
-Libs/Andromede.Libs.Framework/GeneratedDebugProto/*
+Libs/Andromede.Libs.Framework/DebugProto/*
 
 Orchestrator/Andromede.Orchestrator.Aspire/obj/*
 Orchestrator/Andromede.Orchestrator.Aspire/bin/*
