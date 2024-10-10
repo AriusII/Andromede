@@ -16,10 +16,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\Srcs\Externals\Andromede.Srcs.Externals.Authentication\Andromede.Srcs.Externals.Authentication.csproj"/>
+        <ProjectReference Include="..\..\Srcs\Externals\Andromede.Srcs.Gateway.Authentication\Andromede.Srcs.Gateway.Authentication.csproj" />
         <ProjectReference Include="..\..\Srcs\Internals\Andromede.Srcs.Internals.Users\Andromede.Srcs.Internals.Users.csproj"/>
-        <ProjectReference Include="..\..\Srcs\Services\Andromede.Srcs.Services.Logging\Andromede.Srcs.Services.Logging.csproj"/>
-        <ProjectReference Include="..\..\Srcs\Services\Andromede.Srcs.Services.Mailling\Andromede.Srcs.Services.Mailling.csproj"/>
     </ItemGroup>
 
 </Project>

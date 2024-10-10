@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <InvariantGlobalization>true</InvariantGlobalization>
         <PublishAot>false</PublishAot>
+        <RootNamespace>Andromede.Srcs.Externals.Authentication</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
